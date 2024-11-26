@@ -1,0 +1,132 @@
+<!--We will be be using this code to:
+
+1.Create a repository
+
+(Creates a place to store files, code, and revision history for collaboration on projects.)
+
+2.Initialize repo.
+
+(A one-time command you use during the initial setup of a new repository
+Executing this command will create a new .git subdirectory in your current working directory.
+This will also create a new main branch.)
+
+3.Add to stage
+
+(Adds a change in the working directory to the staging area. git add ., git add <filename>)
+
+4.Commit to local repo.
+
+(git commit is a local operation; it affects only your local repository and does not 
+interact with the remote repository. Until they're pushed, commits exist only on your local machine.)
+
+5.Push to repo.
+
+( push command is used to upload local repository content to a remote repository.
+ Pushing is how you transfer commits from your local repository to a remote repo.)
+
+
+ 6.Create branches to isolate work from the main project. This way, you can experiment or make changes without affecting the main codebase.
+
+ 7. Merging combines changes from one branch into another. Typically, you'll merge your new branch back into main after the work is completed.
+
+ 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Guide</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>GitHub Basics</h1>
+    <p>
+      <strong>GitHub</strong> is a platform for hosting and collaborating on
+      code repositories using Git. It allows developers to manage version
+      control, collaborate with others, and deploy code seamlessly.
+    </p>
+    <h2>
+      Steps to Initialize, Add, Commit, Push Code, and Making and Merging
+      Branches
+    </h2>
+    <ol>
+      <li>
+        <strong>Initialize a Git repository:</strong>
+        <br />
+        Use <code class="command">git init</code> to initialize a new Git
+        repository in your project folder.
+        <br />
+        <code>git init</code>
+      </li>
+      <li></li>
+        <strong>Make a new branch:</strong>
+        <br />
+        Use <code class="command">git checkout-b (branch name)
+        </code> to create a new branch.
+        <br />
+        <code> git checkout-b (branch name) </code>
+      </li>
+      <li>
+        <strong>Add files to staging:</strong>
+        <br />
+        Use <code class="command">git add</code> to stage files for a commit. To
+        stage all files:
+        <br />
+        <code>git add .</code>
+      </li>
+      <li>
+        <strong>Commit your changes:</strong>
+        <br />
+        Use <code class="command">git commit</code> to save your changes with a
+        message describing the changes.
+        <br />
+        <code>git commit -m "Your commit message here"</code>
+      </li>
+      <li>
+        <strong>Switch Branches:</strong>
+        <br/>
+        Use <code class="command">git checkout (branch name) <branch-name>
+        </code> to switch branches.
+        <br />
+        <code> git checkout (branch name) </code>
+      </li>
+      <li>
+        <strong>Merge branches:</strong>
+        <br />
+        Use <code class="command">git merge (branch name)</code> to merge the branches.
+        <br />
+        <code>git merge (branch name) </code>
+      </li>
+      <li>
+        <strong>Push changes to a remote repository:</strong>
+        <br />
+        Add a remote repository (if not already added) using:
+        <br />
+        <code
+          >git remote add origin
+          https://github.com/username/repository.git</code
+        >
+        <br />
+        Push your changes to the remote repository using:
+        <br />
+        <code>git push -u origin main</code>
+      </li>
+      
+    </ol>
+    <h2>Example Workflow</h2>
+    <pre>
+git init
+git checkout-b (branch name)
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/username/my-project.git
+git checkout (branch name)
+git merge (branch name)
+git push -u origin main
+
+
+    </pre>
+  </body>
+</html>
